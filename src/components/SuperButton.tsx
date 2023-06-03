@@ -1,17 +1,17 @@
 import React from "react";
 
-type PropsType = {
+type SuperButtonType = {
     name: string
     callBack: () => void
 }
 
-export const SuperButton = (props: PropsType) => {
+export const SuperButton = (props: SuperButtonType) => {
 
-    const onClickHandler = () => {
+    const onclickHandler = () => {
         props.callBack()
     }
 
     return (
-        <button onClick={onClickHandler}>{props.name}</button>
+        <button onClick={onclickHandler}>{props.name}</button>
     )
 }
